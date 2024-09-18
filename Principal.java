@@ -24,22 +24,22 @@ public class Principal{
         System.out.println("Este programa muestra la tasa de divorcio de Colombia" +
                 " y genera la gráfica de su comportamiento con los años");
         List<DatosDivorcios> datosDivorcios = consumoAPI.obtenerDatos(API + "?$limit=" + limite);
-        List<Divorcios> divorcios = datosDivorcios.stream().map(Divorcios::new).collect(Collectors.toList());
-        //System.out.println(datosDivorcios);
+        List<Divorcios> divorcios = datosDivorcios.stream()
+                .map(Divorcios::new)
+                .collect(Collectors.toList());
 
         System.out.println("Elija el tipo de filtro que desea aplicar: ");
         int opcion = teclado.nextInt();
-        //List<DatosDivorcios> divorciosFiltrados = Collections.emptyList();
         List<Divorcios> divorciosFiltrados = Collections.emptyList();
         switch (opcion){
-            case 1:     //Filtrar por año
+            case 1:     //Filtrar por año en todos los departamentos
                 System.out.println("Ingrese el año para el cual desea averiguar los divorcios: ");
                 String anho = teclado.next();
                 divorciosFiltrados = filtroDivorcios.filtrarPorAnho(anho,divorcios);
                 System.out.println("Para el año " + anho + " los divorcios son: " + divorciosFiltrados);
                 break;
-            case 2: //Filtrar por departamento
-                System.out.println("Ingrese el departamento para el cual desea averiguar los divorcios durante varios años: ");
+            case 0: //Filtrar por departamento a lo largo de los años
+                System.out.println("Ingrese el departamento para el cual desea averiguar el historial de divorcios en el tiempo: ");
                 String departamento = teclado.next();
                 //teclado.nextLine();
                 divorciosFiltrados = filtroDivorcios.filtrarPorDepartamento(departamento, divorcios);
@@ -49,7 +49,7 @@ public class Principal{
                 System.out.println("Opción NO VÁLIDA");
         }
 
-        // Separar Fecha, Departamento, No. divorcios
+        // Extraer Fecha, Departamento, No. divorcios
         ArrayList<String> fecha = new ArrayList<>();
         ArrayList<String> departamento = new ArrayList<>();
         ArrayList<String> numeroDeDivorcios = new ArrayList<>();
@@ -59,8 +59,15 @@ public class Principal{
             numeroDeDivorcios.add(divorciosFiltrado.getNumeroDeDivorcios());
         }
 
+        // Unir fecha y departamento para seleccionar una u otra según la necesidad
+        ArrayList<ArrayList<String>> fechaYDepartamento = new ArrayList<>();
+        fechaYDepartamento.add(fecha);
+        fechaYDepartamento.add(departamento);
+        System.out.println("Elemento 0 de fechaYDepartamento: " + fechaYDepartamento.get(0));
+        System.out.println("Elemento 1 de fechaYDepartamento: " + fechaYDepartamento.get(1));
+
         EventQueue.invokeLater(() -> {
-            BarChartExample ex = new BarChartExample(departamento, numeroDeDivorcios);
+            BarChartExample ex = new BarChartExample(fechaYDepartamento, numeroDeDivorcios, opcion);
             ex.setVisible(true);
         });
     }
