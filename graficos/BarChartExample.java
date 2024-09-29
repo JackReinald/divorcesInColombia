@@ -4,6 +4,9 @@ package graficos;
 import org.jfree.chart.ChartFactory;
 import org.jfree.chart.ChartPanel;
 import org.jfree.chart.JFreeChart;
+import org.jfree.chart.axis.CategoryAxis;
+import org.jfree.chart.axis.CategoryLabelPositions;
+import org.jfree.chart.plot.CategoryPlot;
 import org.jfree.chart.plot.PlotOrientation;
 import org.jfree.data.category.CategoryDataset;
 import org.jfree.data.category.DefaultCategoryDataset;
@@ -15,7 +18,6 @@ import java.util.ArrayList;
 public class BarChartExample extends JFrame {
 
     public BarChartExample(ArrayList<ArrayList<String>> fechaYDepartamento, ArrayList<String> numeroDeDivorcios, int opcion) {
-
         initUI(fechaYDepartamento, numeroDeDivorcios, opcion);
     }
 
@@ -45,13 +47,6 @@ public class BarChartExample extends JFrame {
         dataset.setValue(13, "Gold medals", "South Korea");
         dataset.setValue(11, "Gold medals", "Germany"); */
 
-        /*for (int i = 0; i < fechaYDepartamento.get(i).size(); i++) {
-            var eleccion = fechaYDepartamento.get(i);
-            for (int j = 0; j < eleccion.size(); j++) {
-                dataset.setValue(numeroDeDivorcios.get(),"Divorces", eleccion.get(j));
-            }
-        }*/
-
         if (opcion == 0) {  //Graficar por departamento a lo largo de los años
             var eleccion = fechaYDepartamento.get(opcion);
             for (int i = 0; i < eleccion.size(); i++) {
@@ -68,7 +63,6 @@ public class BarChartExample extends JFrame {
     }
 
     private JFreeChart createChart(CategoryDataset dataset) {
-
         JFreeChart barChart = ChartFactory.createBarChart(
                 "Divorces in Colombia by department",
                 "",
@@ -77,14 +71,16 @@ public class BarChartExample extends JFrame {
                 PlotOrientation.HORIZONTAL,
                 false, false, false);
 
+        // Rotación de etiquetas en el eje Y (fechas o departamentos)
+        CategoryPlot plot = barChart.getCategoryPlot();
+        CategoryAxis axis = plot.getDomainAxis();
+
+        // Ajustar tamaño de la fuente de las etiquetas
+        axis.setTickLabelFont(new Font("SansSerif", Font.PLAIN, 11)); // Tamaño de la fuente reducido
+
+        // Aumentar la distancia entre etiquetas (margen entre categorías)
+        axis.setCategoryMargin(0.3); // Ajusta el valor para aumentar la distancia. 0.3 es un buen valor de prueba.
+
         return barChart;
     }
-
-    /*public static void main(String[] args) {
-
-        EventQueue.invokeLater(() -> {
-
-            BarChartExample ex = new BarChartExample();
-            ex.setVisible(true);
-        });*/
 }

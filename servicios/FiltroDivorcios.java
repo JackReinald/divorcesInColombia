@@ -1,8 +1,5 @@
 package servicios;
-
-import modelo.DatosDivorcios;
 import modelo.Divorcios;
-
 import java.util.List;
 import java.util.stream.Collectors;
 
