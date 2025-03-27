@@ -1,0 +1,21 @@
+nombre,precio,stock,categoria
+Laptop HP 15,12000.50,15,Electrónica
+Smartphone Samsung A50,7500.00,30,Electrónica
+Televisor LG 50",15000.00,10,Electrónica
+Refrigerador Mabe,9000.00,8,Electrodomésticos
+Lavadora Whirlpool,8500.00,12,Electrodomésticos
+Microondas Panasonic,2500.00,20,Electrodomésticos
+Cafetera Oster,1200.00,25,Electrodomésticos
+Silla de oficina,800.00,50,Muebles
+Mesa de centro,1500.00,30,Muebles
+Sofá de 3 plazas,5000.00,10,Muebles
+Cama matrimonial,6000.00,15,Muebles
+Escritorio de madera,2000.00,20,Muebles
+Libro "Cien años de soledad",350.00,100,Libros
+Libro "El principito",250.00,120,Libros
+Libro "1984",300.00,80,Libros
+Libro "Don Quijote",400.00,90,Libros
+Libro "Rayuela",320.00,70,Libros
+Zapatos deportivos Nike,1500.00,40,Calzado
+Zapatos formales Flexi,1200.00,35,Calzado
+Sandalia Havaianas,500.00,60,Calzado

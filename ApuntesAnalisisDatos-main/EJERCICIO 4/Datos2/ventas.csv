@@ -1,0 +1,61 @@
+fecha,producto,cantidad,total,sucursal
+2023-10-01,Laptop HP 15,1,12000.50,Sucursal A
+2023-10-01,Smartphone Samsung A50,2,15000.00,Sucursal B
+2023-10-02,Televisor LG 50",1,15000.00,Sucursal C
+2023-10-02,Refrigerador Mabe,1,9000.00,Sucursal A
+2023-10-03,Lavadora Whirlpool,1,8500.00,Sucursal B
+2023-10-03,Microondas Panasonic,2,5000.00,Sucursal C
+2023-10-04,Cafetera Oster,3,3600.00,Sucursal A
+2023-10-04,Silla de oficina,5,4000.00,Sucursal B
+2023-10-05,Mesa de centro,2,3000.00,Sucursal C
+2023-10-05,Sofá de 3 plazas,1,5000.00,Sucursal A
+2023-10-06,Cama matrimonial,1,6000.00,Sucursal B
+2023-10-06,Escritorio de madera,3,6000.00,Sucursal C
+2023-10-07,Libro "Cien años de soledad",10,3500.00,Sucursal A
+2023-10-07,Libro "El principito",15,3750.00,Sucursal B
+2023-10-08,Libro "1984",8,2400.00,Sucursal C
+2023-10-08,Libro "Don Quijote",10,4000.00,Sucursal A
+2023-10-09,Libro "Rayuela",5,1600.00,Sucursal B
+2023-10-09,Zapatos deportivos Nike,4,6000.00,Sucursal C
+2023-10-10,Zapatos formales Flexi,3,3600.00,Sucursal A
+2023-10-10,Sandalia Havaianas,10,5000.00,Sucursal B
+2023-10-11,Laptop HP 15,2,24001.00,Sucursal C
+2023-10-11,Smartphone Samsung A50,1,7500.00,Sucursal A
+2023-10-12,Televisor LG 50",1,15000.00,Sucursal B
+2023-10-12,Refrigerador Mabe,2,18000.00,Sucursal C
+2023-10-13,Lavadora Whirlpool,1,8500.00,Sucursal A
+2023-10-13,Microondas Panasonic,3,7500.00,Sucursal B
+2023-10-14,Cafetera Oster,2,2400.00,Sucursal C
+2023-10-14,Silla de oficina,4,3200.00,Sucursal A
+2023-10-15,Mesa de centro,1,1500.00,Sucursal B
+2023-10-15,Sofá de 3 plazas,2,10000.00,Sucursal C
+2023-10-16,Cama matrimonial,1,6000.00,Sucursal A
+2023-10-16,Escritorio de madera,2,4000.00,Sucursal B
+2023-10-17,Libro "Cien años de soledad",5,1750.00,Sucursal C
+2023-10-17,Libro "El principito",10,2500.00,Sucursal A
+2023-10-18,Libro "1984",6,1800.00,Sucursal B
+2023-10-18,Libro "Don Quijote",8,3200.00,Sucursal C
+2023-10-19,Libro "Rayuela",3,960.00,Sucursal A
+2023-10-19,Zapatos deportivos Nike,2,3000.00,Sucursal B
+2023-10-20,Zapatos formales Flexi,4,4800.00,Sucursal C
+2023-10-20,Sandalia Havaianas,5,2500.00,Sucursal A
+2023-10-21,Laptop HP 15,1,12000.50,Sucursal B
+2023-10-21,Smartphone Samsung A50,3,22500.00,Sucursal C
+2023-10-22,Televisor LG 50",2,30000.00,Sucursal A
+2023-10-22,Refrigerador Mabe,1,9000.00,Sucursal B
+2023-10-23,Lavadora Whirlpool,2,17000.00,Sucursal C
+2023-10-23,Microondas Panasonic,1,2500.00,Sucursal A
+2023-10-24,Cafetera Oster,4,4800.00,Sucursal B
+2023-10-24,Silla de oficina,3,2400.00,Sucursal C
+2023-10-25,Mesa de centro,2,3000.00,Sucursal A
+2023-10-25,Sofá de 3 plazas,1,5000.00,Sucursal B
+2023-10-26,Cama matrimonial,2,12000.00,Sucursal C
+2023-10-26,Escritorio de madera,1,2000.00,Sucursal A
+2023-10-27,Libro "Cien años de soledad",8,2800.00,Sucursal B
+2023-10-27,Libro "El principito",12,3000.00,Sucursal C
+2023-10-28,Libro "1984",7,2100.00,Sucursal A
+2023-10-28,Libro "Don Quijote",9,3600.00,Sucursal B
+2023-10-29,Libro "Rayuela",6,1920.00,Sucursal C
+2023-10-29,Zapatos deportivos Nike,3,4500.00,Sucursal A
+2023-10-30,Zapatos formales Flexi,2,2400.00,Sucursal B
+2023-10-30,Sandalia Havaianas,8,4000.00,Sucursal C
